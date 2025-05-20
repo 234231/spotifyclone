@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div id="header" class="flex bg-black ">
+        <div class="home  ">
+
+            <ul class="flex ">
+                <li> <img class="invert" src="logo.svg" alt="logo"></li>
+                <li class="bg-grey radius"> <img class="invert size-3 margin" src="home.svg" alt="home"> </li>
+                <li>
+                    <div class="bg-grey search radius">
+                        <span><img class="invert size-3 margin " src="search.svg" alt="search"></span>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <div class="nav ">
+            <ul class="flex align_it gap-2">
+                <li>premium</li>
+                <li> support</li>
+                <li>dwonload</li>
+                <li>|</li>
+
+                <li class="flex gap-2 "><span><img class="invert-2 size-2" src="install.svg "
+                            alt=""></span><span>install app</span></li>
+                <li>signup</li>
+                <button>log in</button>
+            </ul>
+        </div>
+    </div>
+    <div class="container flex">
+        <div class="left bg-black ">
+
+            <div class="library bg-darkgrey padding  margin-2 radius-2">
+                <ul class="flex1 ">
+                    <li>
+                        <div class="bg-darkgrey padding-2 flex gap sticky">
+                            <div>your library</div>
+                            <div><img class="invert size-2 " src="addplaylist.svg" alt="playlist" srcset=""></div>
+                        </div>
+
+                    </li>
+
+                    <li class="bg-grey  size radius-2">
+                        <h4>playlist</h4>
+                        <div class="songlist">
+                            <ul>
+
+
+
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="bg-grey padding size radius-2">add your podcast</li>
+                </ul>
+                <div class="flex footer bg-darkgrey padding margin">
+                    <div><a href="https://www.spotify.com/pk-en/legal/" data-encore-id="textLink"><span
+                                data-encore-id="type">Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/pk-en/safetyandprivacy/" data-encore-id="textLink"><span
+                                data-encore-id="type">Safety &amp; Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/pk-en/legal/privacy-policy/" data-encore-id="textLink"><span
+                                data-encore-id="type">Privacy Policy</span></a></div>
+                    <div><a href="https://www.spotify.com/pk-en/legal/cookies-policy/" data-encore-id="textLink"><span
+                                data-encore-id="type">Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/pk-en/legal/privacy-policy/#s3"
+                            data-encore-id="textLink"><span data-encore-id="type">About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/pk-en/accessibility/" data-encore-id="textLink"><span
+                                data-encore-id="type">Accessibility</span></a></div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="right bg-darkgrey">
+            <div class="spotifyplaylist">
+                <h1>trending song</h1>
+                <div class="cardcontainer ">
+
+
+                    <div class="card">
+                        <img src="	https://i.scdn.co/image/ab67616d00001e0285c5968be0d0d9c545241124" alt="card">
+                        <h2>Pal Pal</h2>
+                        <span class="c-grey">Afusic,Ali soomro music</span>
+                    </div>
+                    <div class="card">
+                        <img src="	https://i.scdn.co/image/ab67616d00001e0285c5968be0d0d9c545241124" alt="card">
+                        <h2>Pal Pal</h2>
+                        <span class="c-grey">Afusic,Ali soomro music</span>
+                    </div>
+                    <div class="card  ">
+                        <img src="	https://i.scdn.co/image/ab67616d00001e0285c5968be0d0d9c545241124" alt="card">
+                        <h2>Pal Pal</h2>
+                        <span class="c-grey">Afusic,Ali soomro music</span>
+                    </div>
+                </div>
+            </div>
+            <div class="spotifyplaylist">
+                <h1>popular artist</h1>
+                <div class="cardcontainer ">
+                    <div class="card  ">
+                        <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca "
+                            class="artist-image" alt="card">
+                        <h2>Pal Pal</h2>
+                        <span class="c-grey">Afusic,Ali soomro music</span>
+                    </div>
+                    <div class="card  ">
+                        <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca "
+                            class="artist-image" alt="card">
+                        <h2>Pal Pal</h2>
+                        <span class="c-grey">Afusic,Ali soomro music</span>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class=" playbar">
+                <div class="abovebar ">
+                    <div class="songinfo"></div>
+                    <div class="songbuttons flex">
+                        <img id="previous" src="left.svg" alt="left">
+                        <img id="play" src="playicon.svg" alt="">
+                        <img id="next" src="right.svg" alt="right">
+                    </div>
+                    <div class="timevol">
+                        <div class="songtime"></div>
+                        <div class="volume flex gap-2 ">
+                            <img src="volume.svg" alt="">
+                            <div class="range">
+                                <input type="range" name="volume" id="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="gradient flex">
+        <div>
+            <p>Preview of Spotify</p>
+            <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed</p>
+        </div>
+        <button id="signup">signup free</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+
+
+
+}
+
+body {
+    background-color: black;
+}
+
+.border {
+    border: 2px solid red;
+}
+
+.left {
+    width: 25vw;
+
+}
+
+.right {
+    width: 75vw;
+    max-height: 80vh;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  
+}
+
+.bg-black {
+    background-color: black;
+    color: white;
+}
+
+.home ul li {
+    width: 31px;
+    height: 30px;
+    list-style: none;
+    margin: 10px;
+
+}
+
+.library {
+    max-height: 35.5vh;
+    overflow: auto;
+    overflow-x: hidden;
+
+}
+
+.library ul {
+
+    list-style: none;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.bg-grey {
+    background-color: #1f1f1f;
+
+
+
+}
+
+.bg-darkgrey {
+    background-color: #141313;
+    color: white;
+
+}
+
+.footer {
+    font-size: 10px;
+    position: fixed;
+    left: 9px;
+    bottom: 80px;
+    column-gap: 40px;
+    flex-wrap: wrap;
+    height: 195px;
+    width: 306px;
+
+
+}
+
+.flex a {
+    color: grey;
+
+}
+
+.search {
+    height: 31px;
+    width: 400px;
+    padding: 2px;
+}
+
+.scroll {
+    overflow: scroll;
+}
+
+.nav {
+    padding: 13px;
+    padding-right: 5px;
+    color: grey;
+}
+
+button {
+    font-size: large;
+    background-color: white;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    position: relative;
+
+}
+
+.nav ul :nth-last-child(3) {
+    font-size: 13px;
+}
+
+.nav ul :nth-last-child(2) {
+    font-size: 13px;
+}
+
+.spotifyplaylist {
+    padding: 16px;
+}
+
+.spotifyplaylist .card {
+    width: 160px;
+    font-size: smaller;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.card>* {
+    padding-top: 6px;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.cardcontainer {
+    display: grid;
+    grid-row: 1;
+    grid-template-columns: 180px 180px 180px 180px 180px 180px;
+
+}
+
+.playbutton {
+    display: none;
+
+}
+
+.card:hover .playbutton {
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+}
+
+.artist-image {
+    width: 200px;
+    /* or whatever size you need */
+
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+}
+
+.playbar {
+    position: fixed;
+    bottom: 76px;
+    background-color: rgb(255, 255, 255);
+    width: 73%;
+    filter: invert(0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.songlist ul {
+    padding: 0 12px;
+}
+
+.songlist ul li {
+
+    padding: 15px;
+    margin: 2px 0;
+    border: 2px solid gray;
+    border-radius: 4px;
+    font-size: 11px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.library h4 {
+    margin-left: 0px;
+    padding: 25px;
+}
+
+.gradient {  
+      width:auto;
+    height: 66px;
+    background: linear-gradient(to right, #ff69b4, #8a2be2);
+    color: white;
+    padding: 10px;
+    margin-bottom: 2px;
+    position: fixed;
+    width: 100%;
+
+}
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #121212;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+  }
+  #signup
+  {
+    padding: 10px ;
+    width: 130px;
+    border: none; 
+   position: relative;
+    font-size: 15px;
+    margin: 15px;
+}
+.seekbar
+{
+    height: 7px;
+    border: 2px solid rgb(0, 0, 0);
+    width: 98%;
+   position: relative;
+   border-radius: 5px;
+   cursor: pointer;
+
+}
+.circle
+{
+height: 10px;
+background-color: black;
+width: 10px;
+border-radius: 50%;
+position: absolute;
+top: 0%;
+left: 0%;
+transition: left 0.5s;
+}
+.abovebar
+{
+    display: flex;
+    color: #121212;
+    justify-content: space-between;
+    align-items: center;
+    width:100% ;
+}
+.timevol
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.volume
+{
+    justify-content: center;
+    align-items: center;
+}
+.range
+{
+    display: none;
+}
+.volume:hover .range{
+    transition: 0.2s display;
+    display: block;
+}
